@@ -1,5 +1,7 @@
 # Lab 8 - Starter
 
+Duanhui Li
+
 1. I would fit the automated tests in the Recipe project development pipeline within a GitHub action that runs whenever code is pushed because we can catch potential issues or bugs early in the development process.
 
 2. No, it doesn't necessarily check for the correct output of specific functions.
