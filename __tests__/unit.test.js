@@ -12,10 +12,10 @@ test('checks valid phone number', () => {
     expect(functions.isPhoneNumber('321-456-7890')).toBe(true);
 });
 test('checks valid phone number', () => {
-    expect(functions.isPhoneNumber('123-4568-7890')).toBe(true);
+    expect(functions.isPhoneNumber('123-456-ABCD')).toBe(true);
 });
 test('checks valid phone number', () => {
-    expect(functions.isPhoneNumber('1231-4568-7890')).toBe(true);
+    expect(functions.isPhoneNumber('123-45A-7890')).toBe(true);
 });
 test('checks valid email', () => {
     expect(functions.isEmail('abcd@gmail.com')).toBe(true);
@@ -30,10 +30,10 @@ test('checks valid email', () => {
     expect(functions.isEmail('abcd.gmail.com')).toBe(true);
 });
 test('checks valid strong password', () => {
-    expect(functions.isStrongPassword('AbcD0!')).toBe(true);
+    expect(functions.isStrongPassword('AbcD0')).toBe(true);
 });
 test('checks valid strong password', () => {
-    expect(functions.isStrongPassword('amndsk!DAD0203!')).toBe(true);
+    expect(functions.isStrongPassword('amndskDAD0203')).toBe(true);
 });
 test('checks valid strong password', () => {
     expect(functions.isStrongPassword('what?')).toBe(true);
